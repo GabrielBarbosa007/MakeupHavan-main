@@ -2,7 +2,7 @@
 //  File.swift
 //  MakeupHavan
 //
-//  Created by Alessandro Negrao dos Santos on 29/08/22.
+//  Created by Gabriel de Sousa Barbosa on 29/08/22.
 //
 
 import Foundation
