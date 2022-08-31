@@ -12,7 +12,7 @@ class ProductsViewController: UIViewController {
     lazy var mainView = ProductsView() // Retirar isso na hora de organizar o codigo
     
     private let data: [Feature] = [
-           Feature.init(marca: "Marca1" , preço: "Preco", classificação: "Classificacao", categoria: "Categoria", tipoDeProduto: "Tipo de Produto", descricao: "Produto do tipo e marca"),
+           Feature.init(marca: "Marca" , preço: "Preco", classificação: "Classificacao", categoria: "Categoria", tipoDeProduto: "Tipo de Produto", descricao: "Produto do tipo e marca"),
            Feature.init(marca: "Marca2" , preço: "Preco", classificação: "Classificacao", categoria: "Categoria", tipoDeProduto: "Tipo de Produto", descricao: "Produto do tipo e marca"),
            Feature.init(marca: "Marca3" , preço: "Preco", classificação: "Classificacao", categoria: "Categoria", tipoDeProduto: "Tipo de Produto", descricao: "Produto do tipo e marca"),
            Feature.init(marca: "Marca4" , preço: "Preco", classificação: "Classificacao", categoria: "Categoria", tipoDeProduto: "Tipo de Produto", descricao: "Produto do tipo e marca"),

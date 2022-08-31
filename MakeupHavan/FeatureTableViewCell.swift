@@ -8,8 +8,8 @@
 import UIKit
 
 class FeatureTableViewCell: UITableViewCell {
-
-//MARK: Labels:
+    
+    //MARK: Labels:
     lazy var labelBrand: UILabel = {
         let labelBrand = UILabel()
         labelBrand.translatesAutoresizingMaskIntoConstraints = false
@@ -23,24 +23,24 @@ class FeatureTableViewCell: UITableViewCell {
         return valueLabel
     }()
     lazy var classificationLabel : UILabel = {
-            let classificationLabel = UILabel()
-            classificationLabel.translatesAutoresizingMaskIntoConstraints = false
-            classificationLabel.text = "Classificacao"
-            return classificationLabel
-        }()
+        let classificationLabel = UILabel()
+        classificationLabel.translatesAutoresizingMaskIntoConstraints = false
+        classificationLabel.text = "Classificacao"
+        return classificationLabel
+    }()
     lazy var categoryLabel : UILabel = {
-            let categoryLabel = UILabel()
-            categoryLabel.translatesAutoresizingMaskIntoConstraints = false
-            categoryLabel.text = "Categoria"
-            return categoryLabel
-        }()
+        let categoryLabel = UILabel()
+        categoryLabel.translatesAutoresizingMaskIntoConstraints = false
+        categoryLabel.text = "Categoria"
+        return categoryLabel
+    }()
     lazy var productTypeLabel: UILabel = {
-            let productTypeLabel = UILabel()
-            productTypeLabel.translatesAutoresizingMaskIntoConstraints = false
-            productTypeLabel.text = "Tipo de Produtos"
-            return productTypeLabel
-        }()
-
+        let productTypeLabel = UILabel()
+        productTypeLabel.translatesAutoresizingMaskIntoConstraints = false
+        productTypeLabel.text = "Tipo de Produtos"
+        return productTypeLabel
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configurationAddSubViews()
@@ -49,7 +49,6 @@ class FeatureTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     func configurationAddSubViews() {
         addSubview(labelBrand)
         addSubview(valueLabel)
@@ -57,7 +56,6 @@ class FeatureTableViewCell: UITableViewCell {
         addSubview(categoryLabel)
         addSubview(productTypeLabel)
     }
-    
     func configurationsLabels() {
         constrainsts()
     }

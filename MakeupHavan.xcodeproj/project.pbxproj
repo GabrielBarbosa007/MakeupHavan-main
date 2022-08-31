@@ -11,6 +11,8 @@
 		B21F0B6E28B90D210096AEB5 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0B6D28B90D210096AEB5 /* TableViewExtension.swift */; };
 		B21F0B7128B927360096AEB5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0B7028B927360096AEB5 /* TableViewCell.swift */; };
 		B2241CAA28BD559B0048F8CB /* FeatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2241CA928BD559B0048F8CB /* FeatureTableViewCell.swift */; };
+		B2241CAD28BD85860048F8CB /* ButtonFavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2241CAC28BD85860048F8CB /* ButtonFavoriteTableViewCell.swift */; };
+		B22BE1AD28BF897C00AFF563 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BE1AC28BF897C00AFF563 /* Service.swift */; };
 		B26E566D28BA44B10085A9C5 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E566C28BA44B10085A9C5 /* FeaturesViewController.swift */; };
 		B270485528B7F5740089AF44 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270485428B7F5740089AF44 /* Coordinator.swift */; };
 		B270485728B7F5A50089AF44 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270485628B7F5A50089AF44 /* CoordinatorView.swift */; };
@@ -47,6 +49,8 @@
 		B21F0B6D28B90D210096AEB5 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		B21F0B7028B927360096AEB5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B2241CA928BD559B0048F8CB /* FeatureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTableViewCell.swift; sourceTree = "<group>"; };
+		B2241CAC28BD85860048F8CB /* ButtonFavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		B22BE1AC28BF897C00AFF563 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B26E566C28BA44B10085A9C5 /* FeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
 		B270485428B7F5740089AF44 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B270485628B7F5A50089AF44 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
@@ -132,9 +136,26 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B2241CAB28BD85620048F8CB /* ButtonFavorite */ = {
+			isa = PBXGroup;
+			children = (
+				B2241CAC28BD85860048F8CB /* ButtonFavoriteTableViewCell.swift */,
+			);
+			name = ButtonFavorite;
+			sourceTree = "<group>";
+		};
+		B22BE1AB28BF896900AFF563 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B22BE1AC28BF897C00AFF563 /* Service.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		B26E566B28BA42AD0085A9C5 /*  Features */ = {
 			isa = PBXGroup;
 			children = (
+				B2241CAB28BD85620048F8CB /* ButtonFavorite */,
 				B26E566E28BA45960085A9C5 /* Views */,
 			);
 			name = " Features";
@@ -172,6 +193,7 @@
 		B270485828B7F7E70089AF44 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B22BE1AB28BF896900AFF563 /* Networking */,
 				1B009C0A28BD68B400FFCDD7 /* Models */,
 				B270485928B7F8C60089AF44 /* Controllers */,
 			);
@@ -375,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28965B428B6F026009FB045 /* AppDelegate.swift in Sources */,
+				B22BE1AD28BF897C00AFF563 /* Service.swift in Sources */,
 				B21F0B7128B927360096AEB5 /* TableViewCell.swift in Sources */,
 				B2241CAA28BD559B0048F8CB /* FeatureTableViewCell.swift in Sources */,
 				B28965B628B6F026009FB045 /* SceneDelegate.swift in Sources */,
@@ -383,6 +406,7 @@
 				B21F0B6E28B90D210096AEB5 /* TableViewExtension.swift in Sources */,
 				B270485528B7F5740089AF44 /* Coordinator.swift in Sources */,
 				B270485728B7F5A50089AF44 /* CoordinatorView.swift in Sources */,
+				B2241CAD28BD85860048F8CB /* ButtonFavoriteTableViewCell.swift in Sources */,
 				1B009C0C28BD68BD00FFCDD7 /* FeatureModel.swift in Sources */,
 				B270485D28B800DC0089AF44 /* ProductsViewController.swift in Sources */,
 			);

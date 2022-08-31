@@ -8,7 +8,7 @@
 import UIKit
 
 class FeaturesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     // MARK: TableViewFeature
     let tableFeatures: UITableView = {
         let table = UITableView()
@@ -16,7 +16,7 @@ class FeaturesViewController: UIViewController, UITableViewDelegate, UITableView
         return table
     }()
     
-   //MARK: Init
+    //MARK: Init
     private var item: Feature
     
     init(item: Feature) {
@@ -37,6 +37,7 @@ class FeaturesViewController: UIViewController, UITableViewDelegate, UITableView
         tableFeatures.dataSource = self
         
         tableFeatures.register(FeatureTableViewCell.self, forCellReuseIdentifier: "FeatureCell")
+        tableFeatures.register(ButtonFavoriteTableViewCell.self, forCellReuseIdentifier: "Cel")
     }
     
     override func viewWillLayoutSubviews() {
@@ -47,6 +48,7 @@ class FeaturesViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableFeatures.dequeueReusableCell(withIdentifier: "FeatureCell", for: indexPath) as! FeatureTableViewCell
         cell.labelBrand.text = item.marca
@@ -56,6 +58,7 @@ class FeaturesViewController: UIViewController, UITableViewDelegate, UITableView
         cell.valueLabel.text = item.preço
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableFeatures.deselectRow(at: indexPath, animated: true)
         print(item)
@@ -65,4 +68,5 @@ class FeaturesViewController: UIViewController, UITableViewDelegate, UITableView
         return 220
         
     }
+    
 }

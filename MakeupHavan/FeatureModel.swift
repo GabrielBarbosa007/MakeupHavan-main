@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Feature {
     let marca: String
     let preço: String
